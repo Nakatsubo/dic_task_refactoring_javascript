@@ -108,7 +108,7 @@ const compileSass = () =>
 
 // 'return' is always required. Why?
 const bundleJs = () => {
-  return GULP_WEBPACK_STREAM(WEB_PACK_CONFIG, WEBPACK)
+  return GULP_WEBPACK_STREAM(WEB_PACK_CONFIG, WEBPACK).on('error',(e)=>{this.emit('end')})
   .pipe(GULP_SOURCEMAPS.init())
   .pipe(GULP_SOURCEMAPS.write('maps'))
   .pipe(dest(GULP_PATHS.OUT_JS))

@@ -4,24 +4,24 @@ html lang="ja" prefix="og: http://ogp.me/ns#"
         meta charset="utf-8"
         meta name="viewport" content="width=device-width, initial-scale=1"
         title DIVE INTO SAMPLE JavaScript
-        script src="assets/js/script.js"
-        link rel="stylesheet" href="assets/css/style.css"
+        script src="assets/js/bundle.js"
+        link rel="stylesheet" href="assets/css/main.css"
     body
-        .is__container
+        .root__container
             .container__subjects
-                .subjects__name
+                .subject__name
                     p 名前：テスト太郎
-                #js-subject-input.subjects__input
+                .subject__input
                     p 国語：<input type="number" id="js-national-language" value=0>
                     p 英語：<input type="number" id="js-english" value=0>
                     p 数学：<input type="number" id="js-mathematics" value=0>
                     p 理科：<input type="number" id="js-science" value=0>
                     p 社会：<input type="number" id="js-society" value=0>
-                #js-subject-sum.subjects__sum
+                .subject__sum
                     p 合計点：<label id="js-sum-indicate"></label>
-                #js-subject-average.subject__average
+                .subject__average
                     p 平均点：<label id="js-average-indicate"></label>
-                #js-subject-result.subjects__result
+                .subject__result
                     p <label class="btn btn-primary" id="js-btn-evaluation">ランク</label> ： <label id="js-evaluation"></label>
                     p <label class="btn btn-success" id="js-btn-judge">判定</label> ： <label id="js-judge"></label>
                     p <label class="btn btn-warning" id="js-btn-declaration">最終ジャッジ</label> ： <label id="js-declaration" class="subject__result-declaration"></label>

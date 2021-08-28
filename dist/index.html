@@ -3,13 +3,57 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>test</title>
+    <title>DIVE INTO SAMPLE JavaScript</title>
     <script src="assets/js/bundle.js"></script>
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>
-      Compile Test Top
-    </h1>
+    <div class="root__container">
+      <div class="container__subjects">
+        <div class="subject__name">
+          <p>
+            名前：テスト太郎
+          </p>
+        </div>
+        <div class="subject__input">
+          <p>
+            国語：<input type="number" id="js-national-language" value=0>
+          </p>
+          <p>
+            英語：<input type="number" id="js-english" value=0>
+          </p>
+          <p>
+            数学：<input type="number" id="js-mathematics" value=0>
+          </p>
+          <p>
+            理科：<input type="number" id="js-science" value=0>
+          </p>
+          <p>
+            社会：<input type="number" id="js-society" value=0>
+          </p>
+        </div>
+        <div class="subject__sum">
+          <p>
+            合計点：<label id="js-sum-indicate"></label>
+          </p>
+        </div>
+        <div class="subject__average">
+          <p>
+            平均点：<label id="js-average-indicate"></label>
+          </p>
+        </div>
+        <div class="subject__result">
+          <p>
+            <label class="btn btn-primary" id="js-btn-evaluation">ランク</label> ： <label id="js-evaluation"></label>
+          </p>
+          <p>
+            <label class="btn btn-success" id="js-btn-judge">判定</label> ： <label id="js-judge"></label>
+          </p>
+          <p>
+            <label class="btn btn-warning" id="js-btn-declaration">最終ジャッジ</label> ： <label id="js-declaration" class="subject__result-declaration"></label>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
