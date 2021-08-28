@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'development', // or production
+  mode: 'production', // or production
   devServer: {
     contentBase: './dist',
     open: true
@@ -23,6 +23,6 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'bundle.js'
+    filename: 'main.js'
   },
 };

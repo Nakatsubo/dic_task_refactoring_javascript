@@ -1,1 +1,1 @@
-# Gulp Setting
+# This is a DIC JavaScript assignment.
